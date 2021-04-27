@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
     margin: auto;
     background-color: #ffffff;
-    box-shadow: 1px 1px 5px #ffffff;
+    box-shadow: 1px 1px 8px #000000;
     cursor: pointer;
     transition: transform .3s;
 }
