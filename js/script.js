@@ -18,24 +18,26 @@ var passengerAge = parseInt (prompt ("How old are you?"));
 console.log("passengerAge", passengerAge);
 
 // Il prezzo è 0.21€ al Km
-var startingPrice = kmToGo * 0.21;
+var ticketPrice = kmToGo * 0.21;
 
-console.log("startingPrice", startingPrice);
+console.log("ticketPrice", ticketPrice);
 
 // Sconto 20% per gli under 18
-
-
-console.log();
+if (passengerAge < 18) {
+    var ticketPrice = (ticketPrice - ((ticketPrice * 20) / 100));
+    console.log("ticketPrice - 20%", ticketPrice);
+}
 
 // Sconto 40% per gli over 65
-
-
-console.log();
+if (passengerAge >= 65) {
+    var ticketPrice = (ticketPrice - ((ticketPrice * 40) / 100));
+    console.log("ticketPrice - 40%", ticketPrice);
+}
 
 // Arrotondare prezzo a 2 numeri decimali
+var finalTicketPrice = ticketPrice.toFixed(2);
 
-
-console.log();
+console.log("finalTicketPrice", finalTicketPrice);
 
 // Emettere risultato
-
+document.getElementById ("final_ticket_price").innerHTML = finalTicketPrice;
