@@ -10,18 +10,18 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    color: #00ff00;
-    background-image: linear-gradient(#3bafda, #FFFFFF, #3bafda);
+    background-color: #bb162f;
+    background-image: linear-gradient(#bb162f, #b45f6c, #bb162f);
 }
 
 #container {
-    text-align: left;
+    text-align: center;
     width: 35%;
     padding: 10px;
     border-radius: 10px;
     margin: auto;
-    background-color: #FFFFFF;
-    box-shadow: 1px 1px 5px #d3d3d3;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #ffffff;
     cursor: pointer;
     transition: transform .3s;
 }
@@ -32,23 +32,27 @@ body {
 #text {
     padding: 50px;
     border-radius: 10px;
-    border: 2px dashed #3bb0dab9;
+}
+#text img {
+    height: 120px;
+    margin-bottom: 40px;
 }
 #text h1 {
+    text-transform: uppercase;
     margin-bottom: 50px;
-    font-size: 55px;
-    color: #236983;
+    font-size: 45px;
+    font-weight: 500;
+    color: #bb162f;
 }
 #text p {
     margin: 10px;
     font-size: 20px;
-    color: #00cc00;
+    color: #006C67;
 }
 #text p:last-child {
     margin-top: 20px;
     font-size: 30px;
-    font-weight: bold;
 }
 #text span {
-    color: #3bafda;
+    color: #000000;
 }

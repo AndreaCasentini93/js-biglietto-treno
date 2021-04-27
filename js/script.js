@@ -12,14 +12,10 @@ var kmToGo = parseInt (prompt ("How many kilometers do you want to travel?"));
 
 console.log("kmToGo", kmToGo);
 
-document.getElementById ("km_to_go").innerHTML = kmToGo;
-
 // Chiedere all'utente l'età del passeggero
 var passengerAge = parseInt (prompt ("How old are you?"));
 
 console.log("passengerAge", passengerAge);
-
-document.getElementById ("passenger_age").innerHTML = passengerAge;
 
 // Il prezzo è 0.21€ al Km
 var ticketPrice = kmToGo * 0.21;
@@ -46,4 +42,8 @@ var finalTicketPrice = ticketPrice.toFixed(2);
 console.log("finalTicketPrice", finalTicketPrice);
 
 // Emettere risultato
+document.getElementById ("km_to_go").innerHTML = kmToGo;
+
+document.getElementById ("passenger_age").innerHTML = passengerAge;
+
 document.getElementById ("final_ticket_price").innerHTML = finalTicketPrice;
