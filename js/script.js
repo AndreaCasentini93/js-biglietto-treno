@@ -43,7 +43,9 @@ console.log("finalTicketPrice", finalTicketPrice);
 
 // Emettere risultato
 document.getElementById ("km_to_go").innerHTML = kmToGo + " Km";
+
 document.getElementById ("passenger_age").innerHTML = passengerAge;
+
 if (isNaN(kmToGo) || isNaN(passengerAge)) {
     document.getElementById ("km_to_go").innerHTML = ""; 
     document.getElementById ("passenger_age").innerHTML = "";
