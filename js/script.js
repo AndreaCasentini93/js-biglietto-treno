@@ -8,22 +8,34 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 */
 
 // Chiedere all'utente il numero dei Km da percorrere
+var kmToGo = parseInt (prompt ("How many kilometers do you want to travel?"));
 
+console.log("kmToGo", kmToGo);
 
 // Chiedere all'utente l'età del passeggero
+var passengerAge = parseInt (prompt ("How old are you?"));
 
+console.log("passengerAge", passengerAge);
 
 // Il prezzo è 0.21€ al Km
+var startingPrice = kmToGo * 0.21;
 
+console.log("startingPrice", startingPrice);
 
 // Sconto 20% per gli under 18
 
 
+console.log();
+
 // Sconto 40% per gli over 65
 
 
+console.log();
+
 // Arrotondare prezzo a 2 numeri decimali
 
+
+console.log();
 
 // Emettere risultato
 
