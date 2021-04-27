@@ -42,8 +42,17 @@ var finalTicketPrice = ticketPrice.toFixed(2);
 console.log("finalTicketPrice", finalTicketPrice);
 
 // Emettere risultato
-document.getElementById ("km_to_go").innerHTML = kmToGo;
+document.getElementById ("km_to_go").innerHTML = kmToGo + " Km";
+if (isNaN(kmToGo)) {
+    document.getElementById ("km_to_go").innerHTML = ""; 
+} else {
+    document.getElementById ("final_ticket_price").innerHTML = finalTicketPrice;
+}
 
 document.getElementById ("passenger_age").innerHTML = passengerAge;
-
-document.getElementById ("final_ticket_price").innerHTML = finalTicketPrice;
+if (isNaN(passengerAge)) {
+    document.getElementById ("passenger_age").innerHTML = "";
+    document.getElementById ("final_ticket_price").innerHTML = "";
+} else {
+    document.getElementById ("final_ticket_price").innerHTML = "€ " + finalTicketPrice;
+}
