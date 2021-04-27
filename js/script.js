@@ -43,14 +43,9 @@ console.log("finalTicketPrice", finalTicketPrice);
 
 // Emettere risultato
 document.getElementById ("km_to_go").innerHTML = kmToGo + " Km";
-if (isNaN(kmToGo)) {
-    document.getElementById ("km_to_go").innerHTML = ""; 
-} else {
-    document.getElementById ("final_ticket_price").innerHTML = finalTicketPrice;
-}
-
 document.getElementById ("passenger_age").innerHTML = passengerAge;
-if (isNaN(passengerAge)) {
+if (isNaN(kmToGo) || isNaN(passengerAge)) {
+    document.getElementById ("km_to_go").innerHTML = ""; 
     document.getElementById ("passenger_age").innerHTML = "";
     document.getElementById ("final_ticket_price").innerHTML = "";
 } else {
