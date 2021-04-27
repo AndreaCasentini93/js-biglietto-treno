@@ -26,14 +26,12 @@ console.log("ticketPrice", ticketPrice);
 if (passengerAge < 18) {
     var ticketPrice = (ticketPrice - ((ticketPrice * 20) / 100));
     console.log("ticketPrice - 20%", ticketPrice);
-    document.getElementById ("discount").innerHTML = "20%";
 }
 
 // Sconto 40% per gli over 65
 if (passengerAge >= 65) {
     var ticketPrice = (ticketPrice - ((ticketPrice * 40) / 100));
     console.log("ticketPrice - 40%", ticketPrice);
-    document.getElementById ("discount").innerHTML = "40%";
 }
 
 // Arrotondare prezzo a 2 numeri decimali
@@ -45,6 +43,14 @@ console.log("finalTicketPrice", finalTicketPrice);
 document.getElementById ("km_to_go").innerHTML = kmToGo + " Km";
 
 document.getElementById ("passenger_age").innerHTML = passengerAge;
+
+if (passengerAge < 18) {
+    document.getElementById ("discount").innerHTML = "20%";
+}
+
+if (passengerAge >= 65) {
+    document.getElementById ("discount").innerHTML = "40%";
+}
 
 if (isNaN(kmToGo) || isNaN(passengerAge)) {
     document.getElementById ("km_to_go").innerHTML = ""; 
