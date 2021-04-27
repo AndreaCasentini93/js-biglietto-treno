@@ -18,7 +18,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     box-shadow: 1px 1px 5px #d3d3d3;
     cursor: pointer;
     transition: transform .3s;
@@ -33,14 +33,19 @@ body {
     border: 2px dashed #00000079;
 }
 #text h1 {
-    margin-bottom: 30px;
-    font-size: 45px;
+    margin-bottom: 50px;
+    font-size: 55px;
     color: #33475B;
 }
 #text p {
     margin: 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: #FF7A59;
+}
+#text p:last-child {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
 #text span {
     color: #000000;
