@@ -12,10 +12,14 @@ var kmToGo = parseInt (prompt ("How many kilometers do you want to travel?"));
 
 console.log("kmToGo", kmToGo);
 
+document.getElementById ("km_to_go").innerHTML = kmToGo;
+
 // Chiedere all'utente l'età del passeggero
 var passengerAge = parseInt (prompt ("How old are you?"));
 
 console.log("passengerAge", passengerAge);
+
+document.getElementById ("passenger_age").innerHTML = passengerAge;
 
 // Il prezzo è 0.21€ al Km
 var ticketPrice = kmToGo * 0.21;
@@ -26,12 +30,14 @@ console.log("ticketPrice", ticketPrice);
 if (passengerAge < 18) {
     var ticketPrice = (ticketPrice - ((ticketPrice * 20) / 100));
     console.log("ticketPrice - 20%", ticketPrice);
+    document.getElementById ("discount").innerHTML = "20%";
 }
 
 // Sconto 40% per gli over 65
 if (passengerAge >= 65) {
     var ticketPrice = (ticketPrice - ((ticketPrice * 40) / 100));
     console.log("ticketPrice - 40%", ticketPrice);
+    document.getElementById ("discount").innerHTML = "40%";
 }
 
 // Arrotondare prezzo a 2 numeri decimali
