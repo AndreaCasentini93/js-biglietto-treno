@@ -15,16 +15,26 @@ body {
 
 #container {
     text-align: center;
-    padding: 50px;
+    padding: 10px;
     border-radius: 10px;
     margin: auto;
     background-color: #ffffff;
-    box-shadow: 1px 1px 5px lightgrey;
+    box-shadow: 1px 1px 5px #d3d3d3;
+    cursor: pointer;
+    transition: transform .3s;
+}
+#container:hover {
+    transform: scale(1.05);
 }
 
+#text {
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px dashed #00000079;
+}
 #text h1 {
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 45px;
     color: #33475B;
 }
 #text p {
